@@ -39,4 +39,4 @@ jobs:
     - name: build image
       run: docker build . --file Dockerfile --tag szucscristi/pipeline:0.1
     - name: push image
-      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/pipeline
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/pipeline:0.1
