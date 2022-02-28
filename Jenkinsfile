@@ -5,4 +5,5 @@ node('docker') {
   
     stage 'Build'
     sh "./gradlew build"
+    echo "application built"
 }
